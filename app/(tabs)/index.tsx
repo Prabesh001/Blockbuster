@@ -54,9 +54,9 @@ export default function Index() {
       <ScrollView
         refreshControl={
           <RefreshControl
-            colors={["lightgray"]}
+            colors={["#030014"]}
             tintColor="blue"
-            progressBackgroundColor={"gray"}
+            progressBackgroundColor={"#AB8BFF"}
             refreshing={refreshing}
             onRefresh={onRefresh}
           />
@@ -69,7 +69,10 @@ export default function Index() {
         }}
       >
         <Image source={icons.logo} className="w-12 h-10 mx-auto mt-20 mb-5" />
-
+        <SearchBar
+          onPress={() => router.push("/search")}
+          placeholder="Search for a movie"
+        />
         {moviesLoading || tLoading ? (
           <ActivityIndicator
             size="large"
@@ -80,11 +83,6 @@ export default function Index() {
           <Text>Error: {moviesError?.message || tError?.message}</Text>
         ) : (
           <View className="flex-1 mt-5">
-            <SearchBar
-              onPress={() => router.push("/search")}
-              placeholder="Search for a movie"
-            />
-
             {trendingMovies && (
               <>
                 <View className="mt-10">

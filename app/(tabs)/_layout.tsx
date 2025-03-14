@@ -4,7 +4,13 @@ import { Tabs } from "expo-router";
 import { images } from "@/constants/images";
 import { icons } from "@/constants/icons";
 
-const TabIcon = ({ title, icon, focused }: any) => {
+type TabIconType = {
+  title: string;
+  icon: any;
+  focused: boolean;
+};
+
+const TabIcon = ({ title, icon, focused }: TabIconType) => {
   if (focused) {
     return (
       <ImageBackground source={images.highlight} className="nav-tab">

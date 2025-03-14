@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { router, useLocalSearchParams } from "expo-router";
+import { Link, router, useLocalSearchParams } from "expo-router";
 import useFetch from "@/services/useFetch";
 import { fetchMovieDetails } from "@/services/api";
 import { icons } from "@/constants/icons";
@@ -45,6 +45,20 @@ const MovieDetails = () => {
               movie?.genres?.map((g: string | any) => g).join(" • ") || "N/A"
             }
           />
+          <View className="mt-5 ">
+            <Text className="text-light-200 mb-2 font-normal text-sm">
+              Download
+            </Text>
+            <View className="flex flex-row gap-5">
+              {movie?.torrents?.map((t: any, i: number) => (
+                <View key={i} className="">
+                  <Link href={t.url}>
+                    <Text className="text-white">{t.quality}</Text>
+                  </Link>
+                </View>
+              ))}
+            </View>
+          </View>
         </View>
       </ScrollView>
 

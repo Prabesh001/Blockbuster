@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🎥 Blockbuster
 
-## Get started
+**Blockbuster** is a mobile application template built with React Native and Expo, designed to kickstart your own movie or entertainment-related apps. It features a modern design, modular architecture, and easily customizable components for creating scalable mobile experiences.
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 📱 Beautiful and responsive UI
+- 🧩 Modular and reusable components
+- 📁 Clean folder structure for scalability
+- 🔌 Integrated TypeScript support
+- 🎨 Tailwind CSS with NativeWind for styling
+- 🌐 API-ready architecture for dynamic content
+- 🔄 Easy project reset script to start fresh
 
-2. Start the app
+## 📸 Ideal Use Cases
 
-   ```bash
-    npx expo start
-   ```
+- Movie and TV show apps
+- Entertainment news platforms
+- Streaming content explorers
+- Cinema booking previews
+- Mobile-first media showcase
 
-In the output, you'll find options to open the app in a
+## 🚀 Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Prerequisites
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-## Get a fresh project
+### Setup
 
-When you're ready, run:
+```bash
+git clone https://github.com/Prabesh001/Blockbuster.git
+cd Blockbuster
+npm install
+npx expo start
+```
+
+Scan the QR code with Expo Go or run on an emulator to see it in action.
+
+## 🧹 Reset Project
+
+To reset and scaffold a new project:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This moves the current app to `app-example/` and prepares a fresh `app/` folder.
 
-## Learn more
+## 📁 Folder Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+- `app/` – Main app screens and navigation
+- `components/` – Reusable UI blocks
+- `constants/` – Reusable static values
+- `services/` – API and external logic
+- `types/` & `interfaces/` – TypeScript definitions
+- `assets/` – Images and fonts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📄 License
 
-## Join the community
+Licensed under the MIT License. Use it freely and make it your own!
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> GitHub Repo: [Prabesh001/Blockbuster](https://github.com/Prabesh001/Blockbuster)
